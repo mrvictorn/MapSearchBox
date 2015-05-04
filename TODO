@@ -1,0 +1,11 @@
+1.+ Select row in prevqueries table & map center+zoom move
+2.+ Show markers on map (photos inside)
+2.1.+ Correct radius to minimum map(height,width) dimension / 2
+2.2. fancy icons on map, selected icon
+2.3. marker clusters
+3.+ Export CSV
+4.+ Show panel with App name when logged out
+4.1. config file (move all credentials from code to config.json, add sample config.sample.json and usage instruction)
+5. Review, readme.md, deploy, git
+6. send
+7. Dou - post about app on Meteor 

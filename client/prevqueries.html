@@ -1,0 +1,16 @@
+<template name="previousQueries">
+    <table id='prevQTable' class="table table-hover">
+        <tbody>
+            {{#each prevQueries}}
+                <tr class="{{selected}}">
+                    <td class='pQueryDelete'><span><i class="fa fa-trash-o fa-lg"></i></span></td>
+                    <td class='pQueryLine'>{{name}}</td>
+                    <td class='pQueryLine'>{{position.lat}}</td>
+                    <td class='pQueryLine'>{{position.lng}}</td>
+                    <td class='pQueryLine'>{{roundDistance radius}}</td>
+                    <td class='pQueryLine'>{{formatDate date 'MMM DD HH:mm'}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</template>

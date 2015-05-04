@@ -1,0 +1,40 @@
+<template name='searchResults'>
+  {{#if numFoundVenues}}
+  <section>  
+    <div class='row'>
+        <div class='col-xs-10'>
+            <span class='counter'>{{numFoundVenues}} Venues</span>
+        </div>    
+        <div class='col-xs-2 text-right'>
+            <button id='btnExport'>Export CSV</button>
+        </div>   
+    </div>
+    <div class='row'>
+        <div class='col-xs-12'>
+            <table id='venuesTable' class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>City</td>
+                        <td>Street Address</td>
+                        <td>Latitude</td>
+                        <td>Longtitude</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each foundVenues}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{city}}</td>
+                            <td>{{address}}</td>
+                            <td>{{position.lat}}</td>
+                            <td>{{position.lng}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </section> 
+  {{/if}}
+</template>

@@ -1,0 +1,34 @@
+<template name='venues'>
+  {{#if numVenues}}  
+    <div class='row'>
+        <div class='col-xs-10'>
+            <h3>{{numVenues}} Venues</h3>
+        </div>    
+        <div class='col-xs-2 text-right'>
+            <button id='btnExport'>Export CSV</button>
+        </div>   
+    </div>
+    <div class='row'>
+        <table id='venuesTable' class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>City</td>
+                    <td>Street Address</td>
+                    <td>Latitude</td>
+                    <td>{{formatDate date 'MMM DD HH:mm'}}</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{city}}</td>
+                    <td>{{address}}</td>
+                    <td>{{position.lat}}</td>
+                    <td>{{position.lon}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  {{/if}}
+</template>

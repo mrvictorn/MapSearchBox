@@ -1,0 +1,36 @@
+<head>
+    <title>Map Search Box</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+</head>
+<body>
+    <div class='container'>
+        {{#if currentUser}}
+            <div class='row'>
+                <div class='col-xs-12'>
+                    <div class='login-btns'>
+                        <ul>
+                            {{> loginButtons align="right"}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{> previousQueries}}
+            {{> mapSearch}}
+            {{> searchResults}}
+        {{else}}
+            <div class="row">
+                <div class='jumbotron jumbo-map'>
+                    <div class='greeting'>
+                        <h1>Map Search Box<i class="fa fa-map-marker"></i></h1>
+                        <p>Sign in to search venues on map</p>
+                        <div class='login-btns left'>
+                            <ul>
+                                {{> loginButtons}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</body>
