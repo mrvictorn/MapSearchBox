@@ -6,6 +6,8 @@ Rename or copy settings.sample.json to settings.json
 and set Your keys to Foursquare api in it, 
 baseLocation key privides initial position when app launches
 
+
+
 {
     "public":{
         "baseLocation":"Tokyo"
