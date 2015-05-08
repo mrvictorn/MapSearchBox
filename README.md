@@ -9,10 +9,10 @@ baseLocation key privides initial position when app launches
 
 
 {
-    "public":{
-        "baseLocation":"Tokyo"
-    },
-    "fourSquareKey":"YOUR_FOURSQUARE_KEY_HERE",
-    "fourSquareSecret":"YOUR_FOURSQUARE_SECRET_HERE"
+"public":{
+    "baseLocation":"Tokyo"
+},
+"fourSquareKey":"YOUR_FOURSQUARE_KEY_HERE",
+"fourSquareSecret":"YOUR_FOURSQUARE_SECRET_HERE"
 }
 
